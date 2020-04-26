@@ -24,6 +24,7 @@ public class KnowledgeBaseController {
     private DrugLabelDao drugLabelDao = new DrugLabelDao();
     private DosingGuidelineDao dosingGuidelineDao = new DosingGuidelineDao();
 
+    //在dispatcher的方法之一：register
     public void register(DispatchServlet.Dispatcher dispatcher) {
         dispatcher.registerGetMapping("/drugs", this::drugs);
         dispatcher.registerGetMapping("/drugLabels", this::drugLabels);

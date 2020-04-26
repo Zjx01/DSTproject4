@@ -11,7 +11,7 @@ import java.net.URL;
 
 public abstract class BaseCrawler {
 
-    private static final Logger log = LoggerFactory.getLogger(BaseCrawler.class);
+    private static final Logger log = LoggerFactory.getLogger(BaseCrawler.class);//提供接口
 
     public String getURLContent(String urlString) {
         try {
