@@ -26,7 +26,7 @@ public class KnowledgeBaseController {
 
     //在dispatcher的方法之一：register
     public void register(DispatchServlet.Dispatcher dispatcher) {
-        dispatcher.registerGetMapping("/drugs", this::drugs);
+        dispatcher.registerGetMapping("/drugs", this::drugs);//爬取数据的名称
         dispatcher.registerGetMapping("/drugLabels", this::drugLabels);
         dispatcher.registerGetMapping("/dosingGuideline", this::dosingGuideline);
     }

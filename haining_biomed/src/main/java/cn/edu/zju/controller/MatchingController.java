@@ -30,11 +30,11 @@ public class MatchingController {
 
     public void register(DispatchServlet.Dispatcher dispatcher) {
         dispatcher.registerPostMapping("/upload", this::uploadAnnovarOutput);
-        dispatcher.registerGetMapping("/matchingIndex", this::matchingIndex);
+            dispatcher.registerGetMapping("/matchingIndex", this::matchingIndex);
         dispatcher.registerGetMapping("/matching", this::matching);
         dispatcher.registerGetMapping("/samples", this::samples);
 
-    }
+}
 
     public void matchingIndex(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         request.getRequestDispatcher("/views/matching_index.jsp").forward(request, response);
@@ -56,7 +56,7 @@ public class MatchingController {
         try {
             sampleId = Integer.valueOf(sampleIdParameter);
         } catch (NumberFormatException e) {
-            response.sendRedirect("samples");
+            response.sendRedirect("samples"); //定位到WEB-INF外的jsp
             return;
         }
         List<String> refGenes = annovarDao.getRefGenes(sampleId);

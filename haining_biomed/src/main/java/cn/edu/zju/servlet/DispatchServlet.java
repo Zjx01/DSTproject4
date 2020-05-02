@@ -2,7 +2,6 @@ package cn.edu.zju.servlet;
 
 import cn.edu.zju.controller.IndexController;
 import cn.edu.zju.controller.KnowledgeBaseController;
-import cn.edu.zju.controller.LogController;
 import cn.edu.zju.controller.MatchingController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,8 +55,8 @@ public class DispatchServlet extends HttpServlet {
         MatchingController matchingController = new MatchingController();
         matchingController.register(dispatcher);
 
-        LogController logController = new LogController();
-        logController.register(dispatcher);
+        //LogController logController = new LogController();
+        //logController.register(dispatcher);
 
     }
 
