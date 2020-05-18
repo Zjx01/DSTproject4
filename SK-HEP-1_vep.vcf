@@ -1,0 +1,44 @@
+## ENSEMBL VARIANT EFFECT PREDICTOR v91.3
+## Output produced at 2019-12-04 21:57:59
+## Connected to homo_sapiens_core_91_38 on ensembldb.ensembl.org
+## Using cache in /localdisk/reference/.vep/homo_sapiens/91_GRCh38
+## Using API version 91, DB version 91
+## ensembl-funcgen version 91.4681d69
+## ensembl-variation version 91.c78d8b4
+## ensembl version 91.18ee742
+## ensembl-io version 91.923d668
+## polyphen version 2.2.2
+## sift version sift5.2.2
+## COSMIC version 82
+## 1000genomes version phase3
+## ESP version V2-SSA137
+## gnomAD version 170228
+## gencode version GENCODE 27
+## HGMD-PUBLIC version 20172
+## genebuild version 2014-07
+## regbuild version 16
+## assembly version GRCh38.p10
+## ClinVar version 201710
+## dbSNP version 150
+## Column descriptions:
+## Uploaded_variation : Identifier of uploaded variant
+## Location : Location of variant in standard coordinate format (chr:start or chr:start-end)
+## Allele : The variant allele used to calculate the consequence
+## Gene : Stable ID of affected gene
+## Feature : Stable ID of feature
+## Feature_type : Type of feature - Transcript, RegulatoryFeature or MotifFeature
+## Consequence : Consequence type
+## cDNA_position : Relative position of base pair in cDNA sequence
+## CDS_position : Relative position of base pair in coding sequence
+## Protein_position : Relative position of amino acid in protein
+## Amino_acids : Reference and variant amino acids
+## Codons : Reference and variant codon sequence
+## Existing_variation : Identifier(s) of co-located known variants
+## Extra column keys:
+## IMPACT : Subjective impact classification of consequence type
+## DISTANCE : Shortest distance from variant to transcript
+## STRAND : Strand of the feature (1/-1)
+## FLAGS : Transcript quality flags
+#Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	Extra
+.	Chr1:14653	T	ENSG00000223972	ENST00000450305	Transcript	downstream_gene_variant	-	-	-	-	-	-	IMPACT=MODIFIER;DISTANCE=983;STRAND=1
+.	Chr1:14653	T	ENSG00000223972	ENST00000456328	Transcript	downstream_gene_variant	-	-	-	-	-	-	IMPACT=MODIFIER;DISTANCE=244;STRAND=1
