@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="haining_biomed:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>haining_biomed</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="haining_biomed.war">
+      <element id="artifact" artifact-name="haining_biomed:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -92,7 +92,7 @@ public class UserController {
     }
 
 
-    @RequestMapping(path = "/logout", method = RequestMethod.POST)
+    @RequestMapping(path = "/logout", method = RequestMethod.GET)
     public String logout(HttpServletRequest request) {
         request.getSession().invalidate();
         return "index";
